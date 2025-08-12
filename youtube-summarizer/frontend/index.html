@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Summarizer</h1>
+        <p>Enter a YouTube URL to get a summary, key lessons, and their relevance for startup founders.</p>
+        <input type="text" id="youtube-url" placeholder="Enter YouTube URL">
+        <button id="summarize-btn">Summarize</button>
+        <div id="summary-container" style="display:none;">
+            <h2>Summary</h2>
+            <p id="summary-text"></p>
+            <h2>Key Lessons</h2>
+            <ul id="key-lessons-list"></ul>
+            <h2>Relevance for Startup Founders</h2>
+            <p id="relevance-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

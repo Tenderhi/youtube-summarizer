@@ -1,0 +1,8 @@
+Flask
+Flask-Cors
+youtube-transcript-api
+# Add other libraries like 'openai' or 'google-generativeai' here later
+python-dotenv
+google-generativeai
+waitress
+gunicorn

@@ -1,0 +1,15 @@
+# render.yaml
+# This file tells Render how to build and run your application.
+
+services:
+  - type: web
+    name: youtube-summarizer
+    env: python
+    plan: free
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "gunicorn --chdir backend app:app"
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false # You will set this in the Render dashboard
+      - key: PYTHON_VERSION
+        value: 3.11.0
